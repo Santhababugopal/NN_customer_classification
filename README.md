@@ -17,13 +17,27 @@ You are required to help the manager to predict the right group of the new custo
 
 
 ## DESIGN STEPS
+# STEP 1: Data Collection and Preprocessing
 
-### STEP 1:
-Write your own steps
+Load the customers dataset, remove unnecessary columns like ID, handle missing values, and convert categorical data into numerical form using Label Encoding.
 
-### STEP 2:
+# STEP 2: Data Splitting and Normalization
 
-### STEP 3:
+Separate the dataset into input features (X) and target variable (Segmentation). Split the data into training and testing sets and normalize the features using StandardScaler.
+
+# STEP 3: Neural Network Model Creation
+
+Define the neural network architecture using PyTorch with input, hidden, and output layers to classify customers into four segments (A, B, C, D).
+
+# STEP 4: Model Training
+
+Train the neural network using the training dataset, apply CrossEntropyLoss as the loss function, and update the model weights using the Adam optimizer.
+
+# STEP 5: Model Evaluation and Prediction
+
+Evaluate the model using the test dataset, calculate accuracy, confusion matrix, and classification report, and predict the segment for a new sample input.
+
+
 
 
 ## PROGRAM
